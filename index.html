@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Aviasales</title>
+</head>
+<body>
+
+
+
+    <div id="search">
+        <div id="logo">
+            <a href="#">
+<!--                <img src="img/logo.svg" alt="Aviasales">-->
+                <p>aviasales</p>
+            </a>
+        </div>
+        <div id="search-heading">
+            <h1>Поиск дешевых авиабилетов</h1>
+            <h2>Лучший способ купить авиабилеты дешево</h2>
+        </div>
+
+        <form action="https://" name="search">
+            <div id="search-elements">
+                <label for="location">
+                    <input type="text" id="location" name="search-tickets" placeholder="Москва">
+                </label>
+                <label for="destination">
+                    <input type="text" id="destination" name="search-tickets" placeholder="Город прибытия">
+                </label>
+                <label for="departure">
+                    <input type="text" id="departure" name="search-tickets"
+                           onfocus="(this.type='date')" onblur="(this.type='text')"
+                           placeholder="Туда">
+                </label>
+                <label for="arrival">
+                    <input type="text" id="arrival" name="search-tickets"
+                           onfocus="(this.type='date')" onblur="(this.type='text')"
+                           placeholder="Обратно">
+                </label>
+                <label for="passengers">
+                    <select id="passengers" name="search-tickets" >
+                        <option value="1">1 пассажир</option>
+                    </select>
+                </label>
+            </div>
+
+            <div id="search-button-container">
+                <button id="search-button" type="submit" name="search-tickets">Найти билеты
+                <img src="img/plane.svg"></button>
+            </div>
+        </form>
+
+    </div>
+
+    <div id="main-page">
+
+        <div class="round-icon">
+            <svg width="38" height="38" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M7 19C7 25.627 12.373 31 19 31C25.627 31 31 25.627 31 19C31 12.373 25.627 7 19 7C12.373 7 7 12.373 7 19ZM29 19C29 24.523 24.523 29 19 29C13.477 29 9 24.523 9 19C9 13.477 13.477 9 19 9C24.523 9 29 13.477 29 19Z" fill="#93E5FF"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M19.633 0.89801C19.282 -0.152954 18.717 -0.149963 18.367 0.89801L16 8H22L19.633 0.89801ZM19.633 37.102C19.282 38.153 18.717 38.15 18.367 37.102L16 30H22L19.633 37.102ZM36.602 18.867C37.65 19.217 37.653 19.782 36.602 20.133L29.5 22.5V16.5L36.602 18.867ZM1.39801 20.133C0.347046 19.782 0.350037 19.217 1.39801 18.867L8.5 16.5V22.5L1.39801 20.133Z" fill="#93E5FF"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M32.805 5.84698C33.378 4.91699 33.09 4.61798 32.153 5.19495L15.465 15.464L5.19495 32.153C4.62195 33.0829 4.90997 33.382 5.84698 32.806L22.535 22.5359L32.805 5.84698ZM19.5184 20.9321C18.8281 21.1172 18.0915 20.9202 17.586 20.415C16.8045 19.634 16.8041 18.3674 17.585 17.586C18.3659 16.8045 19.6325 16.8041 20.414 17.585C20.9195 18.0901 21.1171 18.8267 20.9324 19.517C20.7477 20.2074 20.2087 20.7468 19.5184 20.9321Z" fill="#00C2FF"/>
+            </svg>
+
+        </div>
+        <div id="popular-destinations-heading" class="main-heading">
+            <h2>Популярные направления перелетов из города <a href="#">Москва</a></h2>
+        </div>
+        <div id="main-menu-destinations">
+                    <div class="main-menu-destinations-containers">
+                        <div id="random" class="main-menu-destinations-buttons">
+                            <img src="img/random.svg" alt="Куда угодно">
+                        </div>
+                        <p>куда угодно</p></div>
+                <a href="#">
+                    <div class="main-menu-destinations-containers">
+                        <div id="sunny" class="main-menu-destinations-buttons">
+                            <img src="img/sun.svg" alt="Море">
+                        </div>
+                        <p>солнце и море</p></div></a>
+                <a href="#">
+                    <div class="main-menu-destinations-containers">
+                        <div id="shopping" class="main-menu-destinations-buttons">
+                            <img src="img/shopping.svg" alt="Шоппинг">
+                        </div>
+                        <p>шоппинг, город</p></div></a>
+                <a href="#">
+                    <div class="main-menu-destinations-containers">
+                        <div id="culture" class="main-menu-destinations-buttons">
+                            <img src="img/culture.svg" alt="Культура">
+                        </div>
+                            <p>культура и история</p></div></a>
+                <a href="#">
+                    <div class="main-menu-destinations-containers">
+                        <div id="fun" class="main-menu-destinations-buttons">
+                            <img src="img/fun.svg" alt="Развлечения">
+                        </div>
+                            <p>ночная жизнь</p></div></a>
+                <a href="#">
+                    <div class="main-menu-destinations-containers">
+                        <div id="kids" class="main-menu-destinations-buttons">
+                            <img src="img/kids.svg" alt="Дети">
+                        </div>
+                            <p>отдых с детьми</p></div></a>
+            </div>
+
+        <div id="card-container">
+
+        <div class="card">
+
+            <div class="card-column1">
+                <img src="img/city/krasn.png" alt="Краснодар">
+            </div>
+            <div class="card-column2 flag-ru"></div>
+            <div class="card-column3">
+                <div class="card-column3-row1">
+                    <h3>Краснодар</h3>
+                    <a href="#">Найти от 1 212 ₽</a>
+                </div>
+                <div class="card-column3-row2">
+                    <p class="card-country">Россия</p>
+                    <p class="card-date">18 марта</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <div class="card-column1">
+                <img src="img/city/adler.png" alt="Адлер">
+            </div>
+            <div class="card-column2 flag-ru"></div>
+            <div class="card-column3">
+                <div class="card-column3-row1">
+                    <h3>Сочи (Адлер)</h3>
+                    <a href="#">Найти от 1 334 ₽</a>
+                </div>
+                <div class="card-column3-row2">
+                    <p class="card-country">Россия</p>
+                    <p class="card-date">27 марта</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <div class="card-column1">
+                <img src="img/city/spb.png" alt="Санкт-Петербург">
+            </div>
+            <div class="card-column2 flag-ru"></div>
+            <div class="card-column3">
+                <div class="card-column3-row1">
+                    <h3>Санкт-Петербург</h3>
+                    <a href="#">Найти от 1 508 ₽</a>
+                </div>
+                <div class="card-column3-row2">
+                    <p class="card-country">Россия</p>
+                    <p class="card-date">19 февраля</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <div class="card-column1">
+                <img src="img/city/mineral.png" alt="Минеральные Воды">
+            </div>
+            <div class="card-column2 flag-ru"></div>
+            <div class="card-column3">
+                <div class="card-column3-row1">
+                    <h3>Минеральные Воды</h3>
+                    <a href="#">Найти от 2 074 ₽</a>
+                </div>
+                <div class="card-column3-row2">
+                    <p class="card-country">Россия</p>
+                    <p class="card-date">13 марта</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <div class="card-column1">
+                <img src="img/city/symp.png" alt="Симферополь">
+            </div>
+            <div class="card-column2 flag-ru"></div>
+            <div class="card-column3">
+                <div class="card-column3-row1">
+                    <h3>Симферополь (Крым)</h3>
+                    <a href="#">Найти от 2 407 ₽</a>
+                </div>
+                <div class="card-column3-row2">
+                    <p class="card-country">Россия</p>
+                    <p class="card-date">13 марта</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="card">
+
+            <div class="card-column1">
+                <img src="img/city/barca.png" alt="Барселона">
+            </div>
+            <div class="card-column2 flag-es"></div>
+            <div class="card-column3">
+                <div class="card-column3-row1">
+                    <h3>Барселона</h3>
+                    <a href="#">Найти от 4 247 ₽</a>
+                </div>
+                <div class="card-column3-row2">
+                    <p class="card-country">Испания</p>
+                    <p class="card-date">24 марта</p>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+        <div class="round-icon">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 10H28V26.005C28 27.107 27.1 28 26.009 28H1.99C0.891 28 0 27.107 0 26.005V10Z" fill="#93E5FF"/>
+                <path fill-rule="evenodd" clip-rule="evenodd" d="M1.99103 2C0.900024 2 0 2.89795 0 4.0061V9H28V4.0061C28 2.88696 27.109 2 26.01 2H1.99103ZM11.943 21.582L14 20.5L16.057 21.582C16.543 21.8369 16.864 21.605 16.771 21.063L16.378 18.7729L18.042 17.1499C18.435 16.7668 18.314 16.3909 17.769 16.312L15.469 15.9768L14.441 13.8928C14.199 13.4019 13.803 13.3999 13.559 13.8928L12.531 15.9768L10.231 16.312C9.68799 16.3899 9.56403 16.7659 9.95801 17.1499L11.622 18.7729L11.229 21.063C11.137 21.604 11.456 21.8379 11.943 21.582Z" fill="#00C2FF"/>
+                <path d="M5 1C5 0.447715 5.44772 0 6 0H7C7.55228 0 8 0.447715 8 1V3C8 3.55228 7.55228 4 7 4H6C5.44772 4 5 3.55228 5 3V1Z" fill="#00C2FF"/>
+                <path d="M20 1C20 0.447715 20.4477 0 21 0H22C22.5523 0 23 0.447715 23 1V3C23 3.55228 22.5523 4 22 4H21C20.4477 4 20 3.55228 20 3V1Z" fill="#00C2FF"/>
+            </svg>
+        </div>
+
+        <div id="best-prices-heading" class="main-heading">
+            <h2>Лучшие цены на авиабилеты за последний месяц</h2>
+        </div>
+
+        <div id="best-prices-container">
+
+            <div class="best-prices-list">
+                <div class="best-prices-column1 flag-ru"></div>
+                <div class="best-prices-column2">
+                    <h3>Симферополь (Крым)</h3>
+                    <p>Крым</p>
+                </div>
+
+                <div class="best-prices-column3">
+                    <div class="best-prices-column3-row1">
+                        <ul>
+                            <li>Из Москвы</li>
+                            <li>Из Санкт-Петербурга</li>
+                            <li>Из Новосибирска</li>
+                            <li>Из Екатеринбурга</li>
+                            <li>Из Челябинска</li>
+                        </ul>
+                    </div>
+                    <div class="best-prices-column3-row2">
+                        <ul>
+                            <li><a href="#">от 4 813 ₽</a></li>
+                            <li><a href="#">от 7 857 ₽</a></li>
+                            <li><a href="#">от 15 127 ₽</a></li>
+                            <li><a href="#">от 9 275 ₽</a></li>
+                            <li><a href="#">от 9 148 ₽</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <div id="best-prices-middle-list" class="best-prices-list">
+
+                <div class="best-prices-column1 flag-am"></div>
+                <div class="best-prices-column2">
+                    <h3>Ереван</h3>
+                    <p>Армения</p>
+                </div>
+
+                <div class="best-prices-column3">
+                    <div class="best-prices-column3-row1">
+                        <ul>
+                            <li>Из Москвы</li>
+                            <li>Из Санкт-Петербурга</li>
+                            <li>Из Сочи</li>
+                            <li>Из Краснодара</li>
+                            <li>Из Ростова-на-Дону</li>
+                        </ul>
+                    </div>
+                    <div class="best-prices-column3-row2">
+                        <ul>
+                            <li><a href="#">от 6 758 ₽</a></li>
+                            <li><a href="#">от 9 932 ₽</a></li>
+                            <li><a href="#">от 11 951 ₽</a></li>
+                            <li><a href="#">от 11 741 ₽</a></li>
+                            <li><a href="#">от 11 956 ₽</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="best-prices-list">
+
+                <div class="best-prices-column1 flag-md"></div>
+                <div class="best-prices-column2">
+                    <h3>Кишинёв</h3>
+                    <p>Молдавия</p>
+                </div>
+
+                <div class="best-prices-column3">
+                    <div class="best-prices-column3-row1">
+                        <ul>
+                            <li>Из Москвы</li>
+                            <li>Из Санкт-Петербурга</li>
+                            <li>Из Краснодара</li>
+                            <li>Из Сургута</li>
+                            <li>Из Нового Уренгоя</li>
+                        </ul>
+                    </div>
+                    <div class="best-prices-column3-row2">
+                        <ul>
+                            <li><a href="#">от 8 319 ₽</a></li>
+                            <li><a href="#">от 10 800 ₽</a></li>
+                            <li><a href="#">от 12 098 ₽</a></li>
+                            <li><a href="#">от 16 277 ₽</a></li>
+                            <li><a href="#">от 15 987 ₽</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="we-know">
+            <p class="quote">Мы знаем, где купить авиабилеты дешево. Билеты на самолет в 220 стран мира.</p>
+            <p class="quote">Поиск и сравнение цен на авиабилеты среди 100 агентств и 728 авиакомпаний.</p>
+            <div id="small-text">
+                <p>Цены, найденные пользователями за последние 48 часов, не являются офертой.</p>
+            </div>
+        </div>
+
+        <div id="partners">
+            <h2>Дешевые авиабилеты от крупнейших авиакомпаний и агентств</h2>
+            <div id="scroller-menu">
+                <a href="#"><img src="img/partners/aeroflot.png" alt="Аэрофлот"></a>
+                <a href="#"><img src="img/partners/s7.png" alt="S7 Airlines"></a>
+                <a href="#"><img src="img/partners/onetwotrip.png" alt="One Two Trip!"></a>
+                <a href="#"><img src="img/partners/koreanair.png" alt="Korean Air"></a>
+                <a href="#"><img src="img/partners/elivating.png" alt="Elivating"></a>
+            </div>
+        </div>
+
+        <div id="gradient-line"></div>
+
+        <div id="subscription">
+            <div id="subscription-column1">
+                <p>Хотите знать всё о скидках на авиабилеты?</p>
+                <p>Вы можете подписаться на нашу рассылку через соцсети или по электронной почте.</p>
+            </div>
+            <div id="subscription-column2">
+                <div id="subscription-social-buttons">
+                    <button class="subscription-column2-social" type="button"><i class="fab fa-twitter fa-lg"></i></button>
+                    <button class="subscription-column2-social" type="button"><i class="fab fa-facebook-f fa-lg"></i></button>
+                    <button class="subscription-column2-social" type="button"><i class="fab fa-vk fa-lg"></i></button>
+                    <button class="subscription-column2-social" type="button"><i class="fas fa-rss fa-lg"></i></button>
+                </div>
+                <div id="subscription-form">
+                    <input id="email" type="email">
+                    <button id="button-subscribe" type="submit">Подписаться</button>
+                </div>
+            </div>
+        </div>
+
+        <div id="special-offer">
+            <div id="special-offer-heading"><h2>Спецпредложения на авиабилеты</h2></div>
+            <div id="special-offer-container">
+
+                    <div class="special-offer-col">
+                        <div class="special-offer-col-title">
+                            <p class="special-title">Билеты от 499 рублей!</p>
+                        </div>
+                        <div class="special-offer-col-content">
+                            <div class="special-offer-col-logo">
+                                <img src="img/partners/pobeda.png" alt="Победа">
+                            </div>
+                            <div class="special-offer-col-price">
+                                <p class="special-black">от <span>499 ₽</span></p>
+                                <p class="special-red">Осталось 45 дней</p>
+                            </div>
+                        </div>
+                        <div class="special-offer-col-main">
+                            <p class="special-black">Билеты от 499 рублей! Специальное предложение от авиакомпании Победа</p>
+                        </div>
+                        <div class="special-offer-col-button-container">
+                            <a href="#"><div class="special-offer-col-button">Узнать подробности</div></a>
+                        </div>
+                    </div>
+
+                <div class="special-offer-col">
+                    <div class="special-offer-col-title chto-eto">
+                        <p class="special-title">В Нью-Йорк от 20680 рублей!</p>
+                    </div>
+                    <div class="special-offer-col-content">
+                        <div class="special-offer-col-logo">
+                            <img src="img/partners/lufthansa.png" alt="Lufthansa">
+                        </div>
+                        <div class="special-offer-col-price">
+                            <p class="special-black">от <span>20680 ₽</span></p>
+                            <p class="special-red">Осталось 19 дней</p>
+                        </div>
+                    </div>
+                    <div class="special-offer-col-main">
+                        <p class="special-black">Из Москвы в США от 20680 рублей! Специальное предложение от авиакомпании Lufthansa</p>
+                    </div>
+                    <div class="special-offer-col-button-container">
+                        <a href="#"><div class="special-offer-col-button">Узнать подробности</div></a>
+                    </div>
+                </div>
+
+                <div class="special-offer-col">
+                    <div class="special-offer-col-title chto-eto">
+                        <p class="special-title">В Лос-Анджелес от 22360 р...</p>
+                    </div>
+                    <div class="special-offer-col-content">
+                        <div class="special-offer-col-logo">
+                            <img src="img/partners/lufthansa.png" alt="pobeda">
+                        </div>
+                        <div class="special-offer-col-price">
+                            <p class="special-black">от <span>22360 ₽</span></p>
+                            <p class="special-red">Осталось 19 дней</p>
+                        </div>
+                    </div>
+                    <div class="special-offer-col-main">
+                        <p class="special-black">Из Москвы в США от 22360 рублей! Специальное предложение от авиакомпании Lufthansa</p>
+                    </div>
+                    <div class="special-offer-col-button-container">
+                        <a href="#"><div class="special-offer-col-button">Узнать подробности</div></a>
+                    </div>
+                </div>
+
+                <div id="special-offer-footer">
+                    <p class="special-title"><a href="#">Смотреть все спецпредложения</a></p>
+                    <p class="special-title">* средняя цена по направлению</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="info-paragraphs">
+            <h4><i class="fas fa-plane fa-lg"></i>КАК КУПИТЬ ДЕШЕВЫЕ АВИАБИЛЕТЫ?</h4>
+            <p>Aviasales.ru — это метапоисковик авиабилетов. Мы ищем билеты на самолет по сотням авиакомпаний и находим за считанные минуты самые дешевые авиабилеты. Чтобы купить авиабилет дешево, воспользуйтесь нашим поиском, который совершенно бесплатно сравнивает цены на авиабилеты онлайн и находит самые дешевые перелеты. Больше нет смысла ходить в авиакассы, обзванивать агентства — дешевый билет находится на расстоянии клика. На нашем сайте вы можете подобрать дешевые билеты на самолет в Европу, Азию и на другие континенты. Мы написали для вас простую инструкцию о том, как пользоваться поиском и экономить на перелетах от 1000 до 20 000 руб в год.<a href="#">Подробнее</a></p>
+            <h4><i class="fas fa-at fa-lg"></i>ЭЛЕКТРОННЫЙ АВИАБИЛЕТ</h4>
+            <p>Электронный авиабилет — это, по сути, обычный билет на самолет, но только в менее привычном для путешественника виде. Вся информация об авиаперелете (данные пассажира, маршрут следования) хранится в электронной базе, а пассажир получает на руки маршрут-квитанцию. Некоторые пассажиры, купив авиабилет онлайн и получив маршрут-квитанцию, удивлены ее видом — это обыкновенный лист формата А4, на котором распечатана вся информация о предстоящем перелете. Однако это действительно официальный документ, подтверждающий договор между авиаперевозчиком и пассажиром. При регистрации на рейс пассажир должен предъявить маршрут-квитанцию вместе с удостоверением личности точно так же, как предъявляют обыкновенный бумажный билет. Следует отметить, что электронный билет, приобретенный онлайн, стоит дешевле своего бумажного аналога.<a href="#">Подробнее</a></p>
+            <h4><i class="fas fa-list-ol fa-lg"></i>20 СОВЕТОВ АВИАПУТЕШЕСТВЕННИКАМ</h4>
+            <p>Есть масса путеводителей по странам, но ни одного о том, как провести время в самолете. Для того, чтобы сделать ваш перелет максимально комфортным, мы написали 20 советов о подготовке к путешествию. Ведь настоящее путешествие начинается со слов «Добро пожаловать на борт нашего самолета»!<a href="#">Подробнее</a></p>
+        </div>
+
+        <div id="phone-app">
+
+            <div id="phone-app-container">
+                <div id="phone-app-image">
+                    <img src="img/phone.png">
+                </div>
+
+
+                <div id="phone-app-container-text">
+                    <div id="phone-app-title">
+                        <h2>Скачай мобильное приложение Aviasales.ru</h2>
+                    </div>
+                    <div id="phone-app-rating">
+                        <i class="fas fa-star fa-xs"></i>
+                        <i class="fas fa-star fa-xs"></i>
+                        <i class="fas fa-star fa-xs"></i>
+                        <i class="fas fa-star fa-xs"></i>
+                        <i class="fas fa-star-half fa-xs"></i>
+                        <p>Более 103 000 оценок</p>
+                    </div>
+
+                    <div id="appstore">
+                        <div><a href="#"><i class="fab fa-apple fa-xl"></i>
+                            iPhone или iPad</a></div>
+                        <div id="appstore-android"><a href="#"><i class="fab fa-android fa-xl"></i>
+                            Android</a></div>
+                        <div><a href="#"><i class="fab fa-windows fa-xl"></i>
+                            Windows Phone</a></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="footer-menu">
+
+            <div id="footer-menu-container">
+
+
+                <div class="footer-menu-column">
+                    <ul>
+                        <li class="footer-list-header">Страны</li>
+                        <li><a href="#">Россия</a></li>
+                        <li><a href="#">Таиланд</a></li>
+                        <li><a href="#">Черногория</a></li>
+                        <li><a href="#">Кипр</a></li>
+                        <li><a href="#">Болгария</a></li>
+                        <li><a href="#">Грузия</a></li>
+                        <li class="footer-list-all"><a href="#">Все страны<i class="fas fa-long-arrow-alt-right"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-menu-column">
+                    <ul>
+                        <li class="footer-list-header">Города</li>
+                        <li><a href="#">Москва</a></li>
+                        <li><a href="#">Санкт-Петербург</a></li>
+                        <li><a href="#">Симферополь</a></li>
+                        <li><a href="#">Адлер</a></li>
+                        <li><a href="#">Екатеринбург</a></li>
+                        <li><a href="#">Лондон</a></li>
+                        <li class="footer-list-all"><a href="#">Все города<i class="fas fa-long-arrow-alt-right"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-menu-column">
+                    <ul>
+                        <li class="footer-list-header">Авиакомпании</li>
+                        <li><a href="#">Air Berlin</a></li>
+                        <li><a href="#">Air France</a></li>
+                        <li><a href="#">Alitalia</a></li>
+                        <li><a href="#">Air Baltic</a></li>
+                        <li><a href="#">Emirates</a></li>
+                        <li><a href="#">KLM</a></li>
+                        <li class="footer-list-all"><a href="#">Все авиакомпании<i class="fas fa-long-arrow-alt-right"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-menu-column">
+                    <ul>
+                        <li class="footer-list-header">Аэропорты</li>
+                        <li><a href="#">Шереметьево</a></li>
+                        <li><a href="#">Курумоч</a></li>
+                        <li><a href="#">Домодедово</a></li>
+                        <li><a href="#">Толмачево</a></li>
+                        <li><a href="#">Владивосток</a></li>
+                        <li><a href="#">Гамбург</a></li>
+                        <li class="footer-list-all"><a href="#">Все аэропорты<i class="fas fa-long-arrow-alt-right"></i></a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-menu-column">
+                    <ul>
+                        <li class="footer-list-header">Направления</li>
+                        <li><a href="#">MOW – SIP</a></li>
+                        <li><a href="#">MOW – AER</a></li>
+                        <li><a href="#">MOW – TIV</a></li>
+                        <li><a href="#">MOW – MRV</a></li>
+                        <li><a href="#">LED – MOW</a></li>
+                        <li><a href="#">MOW – BKK</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-menu-column">
+                    <ul>
+                        <li class="footer-list-header">Сервисы</li>
+                        <li><a href="#">Горящие авиабилеты</a></li>
+                        <li><a href="#">Календарь низких цен</a></li>
+                        <li><a href="#">Карта низких цен</a></li>
+                        <li><a href="#">Спецпредложения</a></li>
+                        <li><a href="#">Таблица цен</a></li>
+                        <li><a href="#">Блог</a></li>
+                        <li><a href="#">Помощь</i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <hr>
+
+            <div id="footer-about-container">
+
+                <div class="footer-about-column1">
+                    <div class="footer-about-menu">
+                        <ul>
+                            <li><a href="#">О компании</a></li>
+                            <li><a href="#">Партнёрская программа</a></li>
+                            <li><a href="#">Реклама</a></li>
+                            <li><a href="#">Вакансии</a></li>
+                            <li><a href="#">Помощь</a></li>
+                            <li><a href="#">Правила</a></li>
+                            <li><a href="#">White Label авиабилеты</a></li>
+                        </ul>
+                    </div>
+                    <div id="footer-social" class="footer-about-menu">
+                        <ul>
+                            <li><a href="#"><i class="fab fa-vk"></i>Вконтакте</a></li>
+                            <li><a href="#"><i class="fab fa-facebook-f"></i>Фейсбук</a></li>
+                            <li><a href="#"><i class="fab fa-instagram"></i>Инстаграм</a></li>
+                            <li><a href="#"><i class="fab fa-twitter"></i>Твиттер</a></li>
+                            <li><a href="#"><i class="fab fa-viber"></i>Вайбер</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+                <div class="footer-about-column2">
+                    <div id="footer-about-button-container">
+                        <a href="#"><div class="footer-about-button">
+                            <i class="fab fa-apple"></i><p>Скачайте в <span>App Store</span></p></div></a>
+                        <a href="#"><div class="footer-about-button">
+                            <i class="fab fa-google-play"></i><p>Скачайте в <span>Google Play</span></p></div></a>
+                        <a href="#"><div class="footer-about-button">
+                            <i class="fab fa-windows"></i><p><span>Windows <span>Phone</span></span></p></div></a>
+                    </div>
+                </div>
+
+
+    
+
+            </div>
+
+            <div id="footer-footer-footer">
+                <p>Поиск и бронирование отелей</p>
+                <p>© 2007–2018, Aviasales — дешевые авиабилеты</p>
+            </div>
+
+
+
+        </div>
+
+    </div>
+</body>
+</html>
