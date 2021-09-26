@@ -97,7 +97,7 @@ button:hover {
     margin-top: 40px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: center; /*center*/
     flex-wrap: wrap;
     width: 70vw;
 }
@@ -123,13 +123,53 @@ input, select {
     margin-bottom: 2px;
     padding: 18px 16px;
     font-size: 16px;
+    min-width: 10vw;
 }
 
 #location {
+    width: 250px;
     border-radius: 5px 0 0 5px;
 }
 
+#destination {
+    width: 250px;
+}
+
+#arrival, #departure {
+    width: 25px;
+}
+
+#exchange {
+    position: relative;
+}
+
+#exchange-icon a {
+    position: absolute;
+    padding-top: 18px;
+    left: 210px;
+    color: #A0B0B9;
+    z-index: 2;
+}
+
+#exchange-icon a:hover {
+    text-decoration: none;
+}
+
+#exchange-icon i {
+    position: absolute;
+    padding-left: 5px;
+    color: #00ACE2;
+}
+
+.calendar-icon i {
+    position: absolute;
+    padding-top: 18px;
+    padding-left: 10%;
+    color: #00ACE2;
+}
+
 #passengers {
+    width: 212px;
     border-radius: 0 5px 5px 0;
 }
 
@@ -346,8 +386,9 @@ input:focus, select:focus {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
-    min-width: 320px;
-    max-width: 33%;
+    /*min-width: 320px;*/
+    /*max-width: 365px;*/
+    width: 25vw;
     margin-top: 60px;
 
 }

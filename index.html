@@ -27,18 +27,21 @@
 
         <form action="https://" name="search">
             <div id="search-elements">
-                <label for="location">
+                <label id="exchange" for="location">
+                    <span id="exchange-icon"><a href="#">MOW<i class="fas fa-exchange-alt"></i></a></span>
                     <input type="text" id="location" name="search-tickets" placeholder="Москва">
                 </label>
                 <label for="destination">
                     <input type="text" id="destination" name="search-tickets" placeholder="Город прибытия">
                 </label>
-                <label for="departure">
+                <label class="calendar-icon" for="departure">
+                    <i class="fas fa-calendar-alt"></i>
                     <input type="text" id="departure" name="search-tickets"
                            onfocus="(this.type='date')" onblur="(this.type='text')"
                            placeholder="Туда">
                 </label>
-                <label for="arrival">
+                <label class="calendar-icon" for="arrival">
+                    <i class="fas fa-calendar-alt"></i>
                     <input type="text" id="arrival" name="search-tickets"
                            onfocus="(this.type='date')" onblur="(this.type='text')"
                            placeholder="Обратно">
