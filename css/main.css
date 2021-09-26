@@ -123,20 +123,19 @@ input, select {
     margin-bottom: 2px;
     padding: 18px 16px;
     font-size: 16px;
-    min-width: 10vw;
 }
 
 #location {
-    width: 250px;
+    width: 15vw;
     border-radius: 5px 0 0 5px;
 }
 
 #destination {
-    width: 250px;
+    width: 15vw;
 }
 
 #arrival, #departure {
-    width: 25px;
+    width: 5vw;
 }
 
 #exchange {
@@ -146,9 +145,8 @@ input, select {
 #exchange-icon a {
     position: absolute;
     padding-top: 18px;
-    left: 210px;
+    left: 65%;
     color: #A0B0B9;
-    z-index: 2;
 }
 
 #exchange-icon a:hover {
@@ -161,15 +159,19 @@ input, select {
     color: #00ACE2;
 }
 
+.calendar-icon {
+    position: relative;
+}
+
 .calendar-icon i {
     position: absolute;
     padding-top: 18px;
-    padding-left: 10%;
+    padding-left: 80%;
     color: #00ACE2;
 }
 
 #passengers {
-    width: 212px;
+    width: 15vw;
     border-radius: 0 5px 5px 0;
 }
 
