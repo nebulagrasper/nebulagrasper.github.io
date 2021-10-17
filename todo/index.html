@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <title>to do list</title>
+</head>
+<body>
+    <div class="main-container">
+        <div class="main-head">
+            <h1>~todo~</h1></div>
+        <div class="main-menu">
+            <div class="menu-container">
+                <div class="menu">
+                    <input class="new-task-input" type="text" placeholder="Task name" value="">
+                    <div class="textarea-color">
+                        <textarea class="new-task-note-input" placeholder="Note" value=""></textarea>
+                        <div class="color-chooser">
+                            <label class="colors">
+                                <label class="radio none-radio checked-color">
+                                    <input type="radio" value="none" name="color-radio" checked>
+                                </label>
+                                <label class="radio green-radio">
+                                    <input type="radio" value="green" name="color-radio">
+                                </label>
+                                <label class="radio orange-radio">
+                                    <input type="radio" value="orange" name="color-radio">
+                                </label>
+                                <label class="radio red-radio">
+                                    <input type="radio" value="red" name="color-radio">
+                                </label>
+                            </label>
+                        </div>
+                    </div>
+                    <input class="new-task-submit" type="submit" value="ADD">
+                </div>
+            </div>
+        </div>
+        <div class="main-list">
+            <div class="list-board">
+                <div class="list-header">
+                    <h2>Task list</h2>
+                </div>
+                <div class="list-board-tasks-container">
+                </div>
+            </div>
+        </div>
+        <div class="finished-list">
+            <div class="list-board">
+                <div id="finished-list-header" class="list-header">
+                    <h2>Completed tasks</h2>
+                </div>
+                <div class="list-board-finished-container">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

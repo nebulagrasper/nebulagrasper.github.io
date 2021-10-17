@@ -1,0 +1,395 @@
+html, body {
+    display: flex;
+    justify-content: center;
+    font-family: Roboto, sans-serif;
+    margin: 0;
+    height: 100%;
+    background: rgb(241,217,242);
+    background: linear-gradient(180deg, rgba(241,217,242,1) 0%, rgba(148,80,150,1) 100%);
+    font-size: 16px;
+}
+
+.main-menu {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.menu {
+    width: 50vw;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.textarea-color {
+    height: 96px;
+    width: 100%;
+    display: flex;
+    /*flex-direction: row;*/
+}
+
+.color-chooser {
+    background-color: #FFF;
+    width: 96px;
+    height: 96px;
+    border-radius: 5px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 2px;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.1);
+}
+
+.colors {
+    display: flex;
+    margin-top: 5px;
+    flex-wrap: wrap;
+    width: 100px;
+    justify-content: center;
+}
+
+.radio {
+    margin: 5px;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 4px solid #FFF;
+    cursor: pointer;
+    opacity: 50%;
+    box-shadow: 0px 5px 30px 15px rgba(34, 60, 80, 0.2) inset;
+    transition: 0.2s;
+}
+
+.radio:hover {
+    opacity: 100%;
+}
+
+.none-radio {
+    background-color: #FFF;
+}
+
+.green-radio {
+    background-color: green;
+}
+
+.orange-radio {
+    background-color: orange;
+}
+
+.red-radio {
+    background-color: red;
+}
+
+[type='radio'] {
+    display: none;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.main-head {
+    text-align: center;
+    color: #FFF;
+    text-shadow: 0 1px 2px #000;
+}
+
+.main-menu {
+    display: flex;
+    justify-content: center;
+}
+
+input, textarea {
+    border: 0;
+    border-radius: 5px;
+    padding: 10px;
+    height: 15px;
+    resize: none;
+    width: 97%;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.1);
+    font-size: 1rem;
+    margin-bottom: 2px;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+}
+
+textarea {
+    height: 75px;
+    font-family: Roboto, sans-serif;
+}
+
+.new-task-submit {
+    margin-top: 1px;
+    justify-content: center;
+    height: 44px;
+    padding: 0;
+    width: 270px;
+    font-weight: bold;
+    background-color: #76c950;
+    color: #FFF;
+    transition: 0.15s;
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.1);
+}
+
+.new-task-submit:hover {
+    cursor: pointer;
+    background-color: #ffb557;
+}
+
+.main-list {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+
+.finished-list {
+    opacity: 50%;
+    transition: 0.2s;
+    cursor: pointer;
+}
+
+.finished-list:hover {
+    opacity: 100%;
+}
+
+.list-board {
+    box-shadow: 0px 5px 10px 2px rgba(34, 60, 80, 0.15);
+    border-radius: 5px;
+    width: 70vw;
+    max-width: 750px;
+    background: #FFF;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    color: rgba(0,0,0,0.6);
+    font-size: 1.5rem;
+}
+
+h3 {
+    padding: 0;
+    margin: 0;
+    color: rgba(0,0,0,0.6);
+    font-size: 1.2rem;
+}
+
+p {
+    padding: 0 15px;
+    margin: 0;
+    font-style: italic;
+    font-size: 1rem;
+    color: #aaaaaa;
+}
+
+.red {
+    background: rgb(255,72,72);
+    background: linear-gradient(90deg, rgba(255,72,72,0.8) 35%, rgba(255,255,255,0) 100%);
+}
+
+.green {
+    background: linear-gradient(90deg, #76c950 35%, #FFF 100%);
+}
+
+.orange {
+    background: linear-gradient(90deg, #ffb557 35%, #FFF 100%);
+}
+
+.orange p, .red p, .green p {
+    color: #FFF;
+}
+
+.hidden {
+    display: none;
+}
+
+.task-element {
+    border-top: 1px solid #bdbdbd;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 5px 15px;
+    min-height: 40px;
+}
+
+.task-element:hover {
+    background: #ebcfed;
+    cursor: pointer;
+}
+
+.task-element:last-child {
+    border-radius: 0 0 5px 5px;
+}
+
+.element-text {
+    width: 90%;
+}
+
+.element-buttons {
+    width: 10%;
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.task-element:hover .element-buttons {
+    display: flex;
+}
+
+.task-name, .task-note {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.task-element-button {
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0;
+    background: 0;
+}
+
+.task-element-button:hover {
+    background-color: #FFF;
+    opacity: 50%;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.button-delete, .button-delete:hover {
+    color: red;
+}
+
+.button-done {
+    color: green;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.visible {
+    display: flex;
+}
+
+.checked-color {
+    opacity: 100%;
+    box-shadow: 0px 0px 5px 5px rgba(241,217,242,1);
+
+}
+
+.edit-input {
+    width: 50%;
+}
+
+@media (max-width: 800px) {
+    .list-board {
+        justify-content: center;
+        width: 90vw;
+    }
+
+    .menu {
+        width: 90vw;
+        justify-content: center;
+    }
+
+    input {
+        width: 96%;
+    }
+
+    .textarea-color {
+        width: 100%;
+        justify-content: center;
+    }
+
+
+    textarea {
+        width: 80%;
+    }
+
+    .color-chooser {
+        width: 15%;
+        min-width: 96px;
+        min-height: 96px;
+    }
+
+    .new-task-submit {
+        width: 90vw;
+    }
+}
+
+@media (max-width: 450px) {
+
+    .list-board {
+        width: 100vw;
+        border-radius: 0;
+    }
+
+    .main-container {
+        width: 100%;
+    }
+
+    .menu {
+        width: 100vw;
+    }
+
+    input {
+        margin-top: 1px;
+        width: 100%;
+        padding-left: 35px;
+        border-radius: 0;
+    }
+
+    textarea {
+        width: 98vw;
+        margin: 1px 0;
+        border-radius: 0;
+        padding-left: 15px;
+    }
+
+    .textarea-color {
+        flex-direction: column;
+        height: 115px;
+    }
+
+    .color-chooser {
+        margin: 0;
+        width: 100%;
+        min-height: 10px;
+        border-radius: 0;
+    }
+
+    .colors {
+        width: 100vw;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .new-task-submit {
+        margin-top: 1px;
+        width: 100%;
+    }
+
+    .element-text {
+        width: 80%;
+    }
+}
+
