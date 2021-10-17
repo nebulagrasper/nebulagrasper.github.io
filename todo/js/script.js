@@ -1,7 +1,7 @@
 'use strict'
 
-let task = [];
-let taskId = 665;
+let task;
+let taskId;
 rebuildFromLS();
 
 //main inputs
